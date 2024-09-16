@@ -1,0 +1,428 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	
+	
+
+HR {
+	margin:  20px 0;
+	border:  1px groove skyblue;
+}
+
+/*
+-----------------------------------
+------------- TABLAS --------------
+-----------------------------------
+*/
+
+
+ARTICLE SECTION TABLE {
+	margin: 10px auto;
+	padding: 0;
+	width: 100%;
+	text-align: center;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	font-size: medium;
+	border: 3px solid black;
+	border-spacing: 0;
+}
+ARTICLE SECTION TABLE TH {
+	text-align: center;
+	padding: 5px 1px;
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: orange;
+	background-color: #0e2472;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(odd) {
+	background-color: #adc3ff;
+}
+ARTICLE SECTION TABLE TR:nth-of-type(even) {
+	background-color: #7baafc;
+}
+ARTICLE SECTION TABLE TR TD {
+	padding: 5px 1px;
+	text-align: center;
+	color: #0e2472;
+	font-size: 1.1em;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+}
+
+
+/*
+-----------------------------------
+------------- Título --------------
+-----------------------------------
+*/
+#cajaTitulo {
+	margin: auto;
+	height: 140px;
+	text-align: center;
+	background-image: url('./img/Newhome.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+#cajaTitulo IMG {
+	position: absolute;
+	top: -80px;
+	left: 2px;
+	width: 300px;
+	height: 300px;
+	z-index: 1;
+}
+#cajaTitulo FIGCAPTION {
+	opacity: 0.8;
+	position: absolute;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-size: large;
+	width: 600px;
+	top: 12px;
+	left:50%;
+	margin-left:-300px;
+	z-index: 2;
+}
+#cajaTitulo FIGCAPTION:hover {
+	color: #96bff5;
+	cursor: pointer;
+}
+#cajaTitulo FIGCAPTION H1 {
+	color: dodgerblue;
+	text-shadow: 1px 1px 1px black;
+}
+#cajaTitulo FIGCAPTION P {
+	font-size: 1.2em;
+	font-weight: bolder;
+	color: rgb(255, 255, 255);
+	text-shadow: 1px 1px 1px black;
+}
+/*
+-----------------------------------
+---------- Menú Principal ---------
+-----------------------------------
+*/
+nav {
+    margin: auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #f1f1f1;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra sutil para darle relieve */
+}
+
+nav a,
+nav ul li {
+    display: inline-block;
+    margin-right: 20px; /* Menor separación entre botones */
+    text-align: center;
+    padding: 10px 25px;
+    text-decoration: none;
+    list-style: none;
+    background-color: #4CAF50; /* Botones con color verde suave */
+    border-radius: 5px;
+    border: none;
+    color: white;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Transición suave */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil para el botón */
+}
+
+nav a {
+    color: white;
+}
+
+nav a:hover {
+    background-color: #45a049; /* Efecto hover con un verde más oscuro */
+    transform: translateY(-2px); /* Efecto hover para levantar el botón un poco */
+}
+
+nav ul li {
+    margin: 0;
+}
+
+/*
+-----------------------------------
+------------ Contenido ------------
+-----------------------------------
+*/
+#cajaContenido {
+	display: flex;
+	margin: auto;
+	background-color: #ffffff;
+}
+#cajaContenido #cajaEntradas {
+	padding: 10px 5px;
+	margin: 5px 20px 10px 3px;
+	flex: 3;
+	border-right: 3px groove skyblue;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER {
+	margin: 5px 0;
+	color: white;
+	text-align: center;
+	border:  2px groove black;
+	background-color: #103f77;
+	border-radius:  5px;
+	box-shadow: 2px 2px 2px black;
+}
+#cajaContenido #cajaEntradas ARTICLE HEADER H2 {
+	color: red;
+	background-color: #5a71ad;
+	text-shadow: 1px 1px 1px black;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION {
+	margin: 14px 0;
+}
+#cajaContenido #cajaEntradas ARTICLE SECTION H3 {
+	color: #5a71ad;
+	font-size: 1.3em;
+	text-shadow: 1px 1px 1px black;
+	border-bottom: 3px groove black;
+}
+/*
+-----------------------------------
+-------------- Aside --------------
+-----------------------------------
+*/
+ASIDE {
+	margin: 5px 3px 5px 0;
+	padding: 3px 4px 3px 2px;
+	flex:  1;
+}
+ASIDE H4 {
+	margin: 3px 0;
+	padding: 3px 0;
+	color: white;
+	text-align: center;
+	background-color:#5a71ad;
+	border: 2px groove black;
+	border-radius: 3px;
+	text-shadow:  1px 1px 1px black;
+}
+ASIDE UL {
+	width: 100%;
+	margin: 10px 0;
+}
+ASIDE UL LI {
+	margin: 5px 0;
+	padding: 6px 0;
+	width: 100%;
+	list-style: none;
+	border-radius: 5px;
+}
+ASIDE UL LI:nth-of-type(odd) {
+	background-color:#adc3ff;
+}
+ASIDE UL LI:nth-of-type(even) {
+	background-color: #7baafc;
+}
+ASIDE UL LI A {
+	padding: 5px;
+	width: 100%;
+	font-size: 1.2em;
+	text-decoration:  none;
+	text-shadow:  1px 1px 1px black;
+}
+ASIDE UL LI A:hover {
+	color: black;
+	text-decoration: underline;
+}
+ASIDE UL LI:nth-of-type(odd) A {
+	color: darkgray;
+}
+ASIDE UL LI:nth-of-type(even) A {
+	color: white;
+}
+
+/*
+-----------------------------------
+-------------- Footer -------------
+-----------------------------------
+*/
+/* Estilo general para el footer */
+#footer {
+    background-color: #103f77;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    flex: 1;
+    margin-right: 100px;
+	font-size: medium;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.contact-info a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+/*
+-----------------------------------
+------------- Agregar -------------
+-----------------------------------
+
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+	text-align: center;
+	justify-content: center;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del elemento principal */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del formulario */
+form {
+	BODY {
+		background-image: url("../img/PatronFondo.png");
+	}
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de las etiquetas y los campos del formulario */
+form input[type="text"],
+form input[type="date"],
+form textarea {
+    margin-bottom: 1rem;
+	text-align: center;
+	justify-content: center;
+	font-size: medium;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilo del botón de enviar */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+/* Estilo general del cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del elemento principal */
+main {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del título */
+h2 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+/* Estilo del formulario */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilo de las etiquetas y los campos del formulario */
+form label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="number"],
+form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+/* Estilo del botón de enviar */
+form input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 0.75rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+
+}
